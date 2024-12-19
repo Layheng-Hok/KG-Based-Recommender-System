@@ -8,7 +8,7 @@ import torch
 from pytorch_lightning import seed_everything
 from sklearn.metrics import roc_auc_score
 
-from reference_submit.kgrs import KGRS
+from demo.kgrs import KGRS
 
 
 
