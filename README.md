@@ -37,14 +37,14 @@ $$
 ## Methodology
 ### Workflow
 1. **Dataset Preparation** – Encode data and construct the knowledge graph.
-2. **Model Training** – Optimize the model using training data.
+2. **Model Training** – Optimize the model using training data and minimize the loss function.
 3. **Model Testing** – Evaluate performance using AUC and nDCG@5.
 4. **Hyperparameter Tuning** – Optimize learning rate, batch size, etc.
 
 ### Algorithms Implemented
 **Top-K Recommendation Algorithm:** Ranks and filters the top-K most relevant items for each user.
 
-The following algorithm describes the procedure for evaluating the top-K recommendations for a list of users. For each user, the algorithm identifies the top-K items that they are most likely to interact with, excluding items they have already interacted with in the training dataset. The implementation leverages the scoring function of the model and sorts the items based on their predicted scores.
+The following pseudocode describes the procedure for evaluating the top-K recommendations for a list of users. For each user, the algorithm identifies the top-K items that they are most likely to interact with, excluding items they have already interacted with in the training dataset. The implementation leverages the scoring function of the model and sorts the items based on their predicted scores.
 
 ```text
 Algorithm: Top-K Recommendation
