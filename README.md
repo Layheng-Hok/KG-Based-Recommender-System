@@ -1,8 +1,12 @@
 <div align=center>
+   
 # Knowledge Graph-Based Recommender System (KGRS)
+
 </div>
 
 This project focuses on building a **Knowledge Graph-Based Recommender System** to enhance user-item interaction predictions. The system utilizes structured knowledge to improve recommendation accuracy, overcoming limitations of traditional approaches.
+
+The README below is just an overview of the project. For details, please refer to the [report](https://github.com/Layheng-Hok/KG-Based-Recommender-System/blob/main/reference/KGRS_Report.pdf).
 
 ## Introduction
 A recommender system suggests content tailored to users based on past interactions. This project leverages **Knowledge Graphs (KGs)** to model item relationships and enhance recommendations. The primary goal is to develop an algorithm that predicts user interest in unseen items based on structured item attributes and relationships.
@@ -35,7 +39,8 @@ $$
 3. **Model Testing** – Evaluate performance using AUC and nDCG@5.
 4. **Hyperparameter Tuning** – Optimize learning rate, batch size, etc.
 
-**Algorithms Implemented:** Ranks and filters the top-K most relevant items for each user.
+### Algorithms Implemented
+**Top-K Recommendation Algorithm:** Ranks and filters the top-K most relevant items for each user.
 
 The following algorithm describes the procedure for evaluating the top-K recommendations for a list of users. For each user, the algorithm identifies the top-K items that they are most likely to interact with, excluding items they have already interacted with in the training dataset. The implementation leverages the scoring function of the model and sorts the items based on their predicted scores.
 
@@ -73,21 +78,14 @@ Output: List of top-K recommended items for each user
 | Weight Decay | 5e-4 |
 | Epochs | 35 |
 
-### Performance Metrics
+### Experiment Results
+#### AUC Evaluation
 - **AUC Score:** 0.7003
-- **nDCG@5 Score:** 0.1844
-
-### Complexity Considerations
-- Larger KG sizes increase computational cost.
-- Higher embedding dimensions improve accuracy but demand more resources.
-- Training complexity is **linear** in the number of training samples.
-
-## Experiment Results
-### Task 1: AUC Evaluation
 - Higher embedding dimensions improve performance but may overfit.
 - Adjusting margin and negative sampling rate impacts results.
 
-### Task 2: nDCG@5 Evaluation
+#### nDCG@5 Evaluation
+- **nDCG@5 Score:** 0.1844
 - Ranking accuracy is influenced by hyperparameter selection.
 - Strong correlation between **AUC and nDCG@5**.
 
