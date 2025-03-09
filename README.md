@@ -99,7 +99,7 @@ The KG-based recommender system developed in this project demonstrated notable s
 
 However, several challenges were observed. The computational complexity of the model, particularly during the training phase, posed scalability issues when applied to large-scale datasets. Additionally, the quality of the recommendations heavily depended on the completeness and accuracy of the knowledge graph, which might not always be achievable in practical applications.
 
-Experimental results aligned with expectations, showcasing strong performance on metrics like AUC and $nDCG@5$. Nonetheless, there were cases where user preferences were underpredicted due to sparsity in the knowledge graph or interaction records. 
+Experimental results aligned with expectations, showcasing strong performance on metrics like AUC and nDCG@5. Nonetheless, there were cases where user preferences were underpredicted due to sparsity in the knowledge graph or interaction records. 
 
 Future improvements could focus on integrating graph neural networks (GNNs) to further exploit the structural properties of the knowledge graph. Additionally, fine-tuning hyperparameters, exploring alternative embeddings like TransH or RotatE, and incorporating auxiliary data such as user reviews or temporal information could potentially enhance the model's robustness and accuracy. Despite its limitations, the proposed system lays a solid foundation for knowledge graph-driven recommendation strategies.
 
