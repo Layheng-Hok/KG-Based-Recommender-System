@@ -9,7 +9,9 @@ This project focuses on building a **Knowledge Graph-Based Recommender System** 
 The README below is just an overview of the project. For details, please refer to the [report](https://github.com/Layheng-Hok/KG-Based-Recommender-System/blob/main/reference/KGRS_Report.pdf).
 
 ## Introduction
-A recommender system suggests content tailored to users based on past interactions. This project leverages **Knowledge Graphs (KGs)** to model item relationships and enhance recommendations. The primary goal is to develop an algorithm that predicts user interest in unseen items based on structured item attributes and relationships.
+A recommender system is a type of information filtering system that seeks to predict and show the preferences of a user, offering tailored suggestions for items such as books, movies, or music based on their browsing and selection history. These systems utilize algorithms and data analysis to provide personalized recommendations, enhancing user experience and engagement.
+
+Knowledge Graph (KG)-based recommender system technology uses knowledge graphs as auxiliary information to improve the accuracy and explain-ability of the result of recommendations. Knowledge graphs, which are heterogeneous graphs with nodes representing entities and edges representing relationships, help to illustrate the relationships between items and their attributes, and integrate user and user-side information, capturing the relationships between users and items, as well as user preferences, more accurately.
 
 ## Problem Definition
 Given a knowledge graph and a set of interaction records the system predicts user-item interactions:
@@ -97,3 +99,7 @@ However, several challenges were observed. The computational complexity of the m
 Experimental results aligned with expectations, showcasing strong performance on metrics like AUC and $nDCG@5$. Nonetheless, there were cases where user preferences were underpredicted due to sparsity in the knowledge graph or interaction records. 
 
 Future improvements could focus on integrating graph neural networks (GNNs) to further exploit the structural properties of the knowledge graph. Additionally, fine-tuning hyperparameters, exploring alternative embeddings like TransH or RotatE, and incorporating auxiliary data such as user reviews or temporal information could potentially enhance the model's robustness and accuracy. Despite its limitations, the proposed system lays a solid foundation for knowledge graph-driven recommendation strategies.
+
+## References
+- Q. Guo et al., "A Survey on Knowledge Graph-Based Recommender Systems," *IEEE Transactions on Knowledge and Data Engineering*, pp. 1–1, 2020, doi: 10/ghxwqg.
+- D. Bahdanau, K. Cho, and Y. Bengio, "Neural Machine Translation by Jointly Learning to Align and Translate," in *3rd International Conference on Learning Representations, ICLR 2015*, San Diego, CA, USA, May 7-9, 2015. [Online]. Available: [http://arxiv.org/abs/1409.0473](http://arxiv.org/abs/1409.0473)
