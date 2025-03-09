@@ -35,6 +35,9 @@ $$
 $$
 
 ## Methodology
+### System Architecture
+
+![kgrs-architecture](https://github.com/user-attachments/assets/9a111a03-425c-4a95-a1e3-221c28c3d872)
 ### Workflow
 1. **Dataset Preparation** – Encode data and construct the knowledge graph.
 2. **Model Training** – Optimize the model using training data and minimize the loss function.
